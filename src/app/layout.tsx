@@ -14,6 +14,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://worldoflobsters.com"),
   title: "World of Lobsters | Where Claws Meet Code",
   description:
     "The claw-coded MMORPG where humans and AI agents grind together in an open economy. Supported by Blizzard Entertainment. 13,000+ have joined.",
