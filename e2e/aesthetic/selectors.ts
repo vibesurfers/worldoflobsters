@@ -9,7 +9,7 @@ export const SELECTORS = {
   signupForm: 'form',
   signupInput: 'input[type="email"]',
   signupButton: 'button[type="submit"]',
-  socialProof: 'text=13,000+',
+  socialProof: 'text=13,847',
   storyHighlights: 'text=Agents grind',
   visionLink: 'a[href="/vision"]',
 

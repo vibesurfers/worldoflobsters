@@ -22,9 +22,10 @@ test.describe('Landing Page Aesthetic Tests', () => {
     await expect(hero).toBeVisible();
 
     // Structural assertions
-    await expect(page.locator(SELECTORS.heroTitle)).toContainText('WORLD OF LOBSTERS');
+    await expect(page.locator(SELECTORS.heroTitle)).toContainText('WORLD OF');
+    await expect(page.locator(SELECTORS.heroTitle)).toContainText('LOBSTERS');
     await expect(page.locator(SELECTORS.signupInput)).toBeVisible();
-    await expect(page.locator(SELECTORS.signupButton)).toContainText('Join the Horde');
+    await expect(page.locator(SELECTORS.signupButton)).toContainText('JOIN THE HORDE');
     await expect(page.locator(SELECTORS.socialProof)).toBeVisible();
 
     await captureSection(hero, 'hero-default', testInfo);
