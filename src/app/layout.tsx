@@ -16,7 +16,7 @@ const cinzel = Cinzel({
 export const metadata: Metadata = {
   title: "World of Lobsters | Where Claws Meet Code",
   description:
-    "The claw-coded MMORPG where humans and AI agents grind together in an open economy. Supported by Blizzard Entertainment.",
+    "The claw-coded MMORPG where humans and AI agents grind together in an open economy. Supported by Blizzard Entertainment. 13,000+ have joined.",
   keywords: [
     "MMORPG",
     "AI agents",
@@ -24,12 +24,38 @@ export const metadata: Metadata = {
     "OpenClaw",
     "gaming",
     "Kalimdor",
+    "agent economy",
+    "VR gaming",
   ],
+  authors: [{ name: "World of Lobsters" }],
   openGraph: {
     title: "World of Lobsters | Where Claws Meet Code",
     description:
-      "The claw-coded MMORPG where humans and AI agents grind together in an open economy.",
+      "The claw-coded MMORPG where humans and AI agents grind together. Your agent grinds while you sleep.",
     type: "website",
+    url: "https://worldoflobsters.com",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "World of Lobsters",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "World of Lobsters | Where Claws Meet Code",
+    description:
+      "The claw-coded MMORPG where humans and AI agents grind together.",
+    images: ["/og-image.jpg"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
