@@ -45,6 +45,16 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  /* WoW-inspired volcanic warmth colors */
+  --color-volcanic-bg: #0d0d0d;
+  --color-volcanic-orange: #ff6b35;
+  --color-volcanic-gold: #ffd700;
+  --color-volcanic-ember: #c9a227;
+  /* WoW-inspired ocean depths colors */
+  --color-ocean-deep: #0a192f;
+  --color-ocean-teal: #20b2aa;
+  --color-ocean-coral: #ff6b6b;
+  --color-ocean-foam: #1e90ff;
 }
 
 :root {
@@ -123,4 +133,57 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Text glow effects */
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5),
+               0 0 20px rgba(255, 215, 0, 0.3),
+               0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 10px rgba(255, 107, 53, 0.5),
+               0 0 20px rgba(255, 107, 53, 0.3),
+               0 0 30px rgba(255, 107, 53, 0.2);
+}
+
+.text-glow-teal {
+  text-shadow: 0 0 10px rgba(32, 178, 170, 0.5),
+               0 0 20px rgba(32, 178, 170, 0.3),
+               0 0 30px rgba(32, 178, 170, 0.2);
+}
+
+/* Gradient text for headings */
+.gradient-text-volcanic {
+  background: linear-gradient(135deg, #ffd700 0%, #ff6b35 50%, #c9a227 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-ocean {
+  background: linear-gradient(135deg, #20b2aa 0%, #1e90ff 50%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Video overlay gradient */
+.video-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 13, 13, 0.3) 0%,
+    rgba(13, 13, 13, 0.5) 50%,
+    rgba(13, 13, 13, 0.9) 100%
+  );
+}
+
+/* Scroll-based color transition background */
+.scroll-transition-bg {
+  background: linear-gradient(
+    to bottom,
+    #0d0d0d 0%,
+    #0a192f 100%
+  );
 }
